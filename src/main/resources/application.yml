@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        readTransactions-out-0:
+          destination: transactions-to-validate
+          
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
